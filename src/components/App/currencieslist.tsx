@@ -11,7 +11,7 @@ function Currencieslist({currencieslist}){
 
         <>
 
-        <ul> Change for 1 Euro </ul>
+        <h2> Change for 1 Euro </h2>
 
 
         <div className='currenciesbox'>

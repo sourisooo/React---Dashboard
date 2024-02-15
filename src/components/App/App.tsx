@@ -5,8 +5,8 @@ import currencies from './currencies';
 import Header from './header';
 import Ingredients from './ingredients';
 import Instructions from './instructions';
-import Liste from './liste';
 import Fullgame from './fullgame';
+
 
 
 
@@ -78,7 +78,6 @@ function App() {
 
 
 
-
   return (
 
 
@@ -102,13 +101,10 @@ function App() {
 
       <div className="app1"> <Currencieslist currencieslist= {currencies} /></div>
 
-
-        <div className="app2"> 
-         <Fullgame/> 
+        <div className="app2">  <Fullgame/>  </div>
 
 
-         
-         </div>
+
 
       </div>
 

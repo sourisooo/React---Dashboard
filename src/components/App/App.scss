@@ -5,6 +5,10 @@
   display: flex;
   flex-direction: row;
   margin-left:  10vw;
+  max-height: 100vh;
+  overflow: hidden;
+  background-color: #282c34;
+  max-width: 80vw;
 
 
 
@@ -24,8 +28,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: calc(10px + 2vmin);
     color: v.$color;
+    font-size: 1em;
+    min-width: 40vw;
 
   }
 
@@ -47,7 +52,6 @@
 .app-add {
 
   min-width: 40vw;
-  margin-right:  10vw;
 
 
 
@@ -55,7 +59,14 @@
 
 .app1 {
 
-  background-color: aquamarine;
+  background-color: #282c34;
+
+
+}
+
+.app2 {
+
+  background-color: #282c34;
 
 }
 

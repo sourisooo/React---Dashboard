@@ -1,14 +1,13 @@
 main#playground {
 
-    width: 45vw;
-    margin-right: 10vw;
+    
   }
   
   div.cell {
-    width: 15vw;
-    height: 15vw;
-    min-height: 50px;
-    min-width: 50px;
+    width: 7vw;
+    height: 7vw;
+    min-height: 25px;
+    min-width: 25px;
     display: inline-block;
     margin: 3px;
     border: 0px solid white;
@@ -18,16 +17,21 @@ main#playground {
   
   button#go {
     display: block;
-    width: 15vw;
-    font-size: 2em;
-    height: 10vh;
+    width: 7vw;
+    font-size: 1em;
+    height: 5vh;
     background-color: #ccc;
     border: none;
     margin: 3vh auto;
     cursor: pointer;
+
   }
   
   div#message {
     text-align: center;
-    font-size: 2em;
+    font-size: 1em;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    padding: 2em;
+    color: #ccc;
   }
