@@ -105,6 +105,7 @@ const app = {
       app.playerchoice=[]; 
       app.sequence=[];
       clearTimeout(app.timer), app.timer = 0;
+      window.location.reload();
   
   
     },
