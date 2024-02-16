@@ -6,7 +6,8 @@ import Header from './header';
 import Ingredients from './ingredients';
 import Instructions from './instructions';
 import Fullgame from './fullgame';
-
+import Fullgame2 from './fullgame2';
+import Fullgame3 from './fullgame3';
 
 
 
@@ -101,13 +102,13 @@ function App() {
 
       <div className="app1"> <Currencieslist currencieslist= {currencies} /></div>
 
-        <div className="app2">  <Fullgame/>  </div>
+        {/* <div className="app2">  <Fullgame2/>  </div> */}
 
+        <div className="app2">  <Fullgame3/>  </div>
 
-
+        <div className="app3">  <Fullgame/>  </div>
 
       </div>
-
 
     </div>
 

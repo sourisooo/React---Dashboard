@@ -1,7 +1,4 @@
 import './fullgame.scss';
-import './fullgamez.js'
-
-
 import app from './fullgamez.js';
 import { useEffect } from 'react';
 
@@ -15,15 +12,11 @@ import { useEffect } from 'react';
 
         <>
 
-        <button type="button" id="go">Démarrer</button>
-         <div id="message"></div>
+        <h2> Memory game</h2>
+
+        <button type="button" id="go">Démarrer</button>   <a id="message"></a>
 
         <main id="playground"></main>
-
-
-
-        <script type="module" src="./fullgamez.js"> </script>
-
 
 
         </>
@@ -33,11 +26,7 @@ import { useEffect } from 'react';
 
 
 
-
-
 }
-
-
 
 
 export default Fullgame;

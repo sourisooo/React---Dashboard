@@ -1,6 +1,6 @@
 main#playground {
 
-    
+
   }
   
   div.cell {
@@ -16,13 +16,15 @@ main#playground {
   }
   
   button#go {
+
+
     display: block;
     width: 7vw;
     font-size: 1em;
     height: 5vh;
     background-color: #ccc;
     border: none;
-    margin: 3vh auto;
+    margin: 1.5vh auto;
     cursor: pointer;
 
   }
@@ -30,8 +32,7 @@ main#playground {
   div#message {
     text-align: center;
     font-size: 1em;
-    margin-top: 3vh;
-    margin-bottom: 3vh;
+
     padding: 2em;
     color: #ccc;
   }

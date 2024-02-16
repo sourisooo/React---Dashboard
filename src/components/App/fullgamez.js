@@ -3,6 +3,14 @@
  * Code fourni
  */
 const app = {
+
+  test:  function (){
+
+    let test = document.querySelector('#go');
+    console.log(test);
+    
+  },
+
     // just a utility var to remember all the colors
     colors: ['red','green','blue','yellow'],
   
@@ -76,7 +84,7 @@ const app = {
     /** Fin du code fourni. Après, c'est à toi de jouer! */
   
     showMessage: function (message) {
-      document.getElementById('message').innerHTML = message;
+    document.getElementById('message').innerHTML = message;
       app.hidebutton();
       
     },
