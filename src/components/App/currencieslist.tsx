@@ -4,8 +4,8 @@ import './currencieslist.scss';
 
 function Currencieslist({currencieslist}){
 
-
     const [basevalue, setBaseValue] = useState(1);
+    const [calcvalue, setCalcValue] = useState(0);
     const [change, setChange] = useState(0);
     const [changename, setChangeName] = useState('');
 
@@ -17,10 +17,23 @@ function Currencieslist({currencieslist}){
 
         setChangeName(() => hovered[0] );
 
-        setChange(() => (hovered[1]*basevalue).toFixed(2) );
+         setChange(() => (hovered[1]*basevalue).toFixed(2) );
+
+         setCalcValue(() => change);
 
 
       };
+
+      const updatechange = (e) => {
+
+        setBaseValue(inputElement.value);
+
+        setCalcValue (() => (change*inputElement.value).toFixed(2) );
+
+        console.log(basevalue);
+
+
+      }
 
 
     return (
@@ -29,7 +42,7 @@ function Currencieslist({currencieslist}){
 
         <>
 
-        <h2>Change for <input type="text" className="change" placeholder="1" onChange={e => setBaseValue(inputElement.value)} /> Euros: {changename} {change}   </h2>
+        <h2>Change for <input type="text" className="change" placeholder="1" onChange={updatechange} /> Euros: {changename} {calcvalue}   </h2>
         
 
 
