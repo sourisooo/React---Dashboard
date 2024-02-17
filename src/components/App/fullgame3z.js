@@ -718,7 +718,7 @@ class Layer {
                                 
                                 } else {this.frameTimer+=deltaTime};
                     
-                                console.log(this.speed);
+                                // console.log(this.speed);
                             }
                     
                     
@@ -1142,7 +1142,7 @@ class Layer {
                                                   
                                                     if(this.game.message==true){context.fillText('Dont have enought Energy(cost 10)', this.game.width*0.5-300,this.game.height*0.5-50);};
                                                     // if(this.game.message=false){context.fillText('', this.game.width*0.5,this.game.height*0.5+20);};
-                                                    console.log(this.game.message);
+                                                    // console.log(this.game.message);
                                             
                                             
                                                     if (this.game.gameOver) 
