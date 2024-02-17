@@ -3,8 +3,6 @@ import './App.scss';
 import Currencieslist from './currencieslist';
 import currencies from './currencies';
 import Header from './header';
-import Ingredients from './ingredients';
-import Instructions from './instructions';
 import Fullgame from './fullgame';
 import Fullgame2 from './fullgame2';
 import Fullgame3 from './fullgame3';
@@ -21,6 +19,7 @@ function App() {
   if (random<0.5) { game2 = true} else { game3 = true};
 
 
+
   return (
 
 
@@ -31,11 +30,7 @@ function App() {
   
       <div className="app-header">
 
-      <Header header = {recipe.header}/>
-
-      <Ingredients ingredients = {recipe.ingredients}/>
-
-      <Instructions instructions= {recipe.instructions}/>
+      <Header recipes = {recipe}/>
 
 
       </div>
