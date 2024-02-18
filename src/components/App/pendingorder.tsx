@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 
 function PendingOrder({buy, setBuy}){
 
-    const [update, setUpdate] = useState(false);
+
 
     const updatestate = () => {
 
@@ -11,10 +11,6 @@ function PendingOrder({buy, setBuy}){
 
         listelement.innerHTML='';
 
-
-   
-
-        if (update==false) {setUpdate(true);} {setUpdate(false);}
 
         addelement();
 
@@ -69,12 +65,13 @@ function PendingOrder({buy, setBuy}){
 
             // setBuy(buy.filter(f => f != e.target.parentNode.innerText.slice(0, -1)));
 
-            let index;
 
-               setBuy(buy.toString().replace(`${e.target.parentNode.innerText.slice(0, -1)}`, '').split(','));
+            setBuy(buy.toString().replace(`${e.target.parentNode.innerText.slice(0, -1)}`, '').split(','));
 
 
             // setBuy(index = buy.filter(f => f != e.target.parentNode.innerText.slice(0, -1)));
+
+            // e.target.remove();
 
             // e.target.parentNode.remove();
 
