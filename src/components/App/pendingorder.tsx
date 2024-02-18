@@ -71,7 +71,7 @@ function PendingOrder({buy, setBuy}){
 
             let index;
 
-            setBuy(buy.toString().replace(`${e.target.parentNode.innerText.slice(0, -1)}`, '').replace(' ,', '').replace(',,', '').split(', '));
+               setBuy(buy.toString().replace(`${e.target.parentNode.innerText.slice(0, -1)}`, '').split(','));
 
 
             // setBuy(index = buy.filter(f => f != e.target.parentNode.innerText.slice(0, -1)));
