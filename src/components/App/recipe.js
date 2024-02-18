@@ -73,7 +73,7 @@ const recipe = [
     header : {
        title: 'Pizza Top',
        thumbnail: './Images/Default_pizza_3.jpg',
-       author: 'Sourisooo',
+       author: 'Marmiton',
        difficulty: 'Medium'},
      
         ingredients : [
@@ -134,8 +134,8 @@ const recipe = [
       header : {
          title: 'Hamburger Maison',
          thumbnail: './Images/Default_bigmac_3.jpg',
-         author: 'Sourisooo',
-         difficulty: 'Ronald'},
+         author: 'Marmiton',
+         difficulty: 'facile'},
        
           ingredients : [
            {
@@ -190,8 +190,8 @@ const recipe = [
       header : {
          title: 'Frites Maison',
          thumbnail: './Images/Default_frites_1.jpg',
-         author: 'Sourisooo',
-         difficulty: 'Sourisooo'},
+         author: 'Marmiton',
+         difficulty: 'Difficile'},
        
           ingredients : [
            {

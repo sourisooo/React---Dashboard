@@ -23,6 +23,15 @@ const app = {
     difficulty: 3,
     timer:0, 
   
+    clearBoard: function(){
+
+      const cell = document.querySelectorAll('.cell');
+
+        cell.forEach(e => e.remove());
+
+
+    },
+
     drawCells: function () {
       const playground = document.getElementById('playground');
       for (const color of app.colors) {
@@ -75,6 +84,7 @@ const app = {
   
     init: function () {
       console.log('init');
+      app.clearBoard();
       app.drawCells();
     
       // listen click on the "go" button
@@ -184,10 +194,14 @@ const app = {
   
   
     }
+
+  
+  
   
   
   };
-  
+
+    
   
 
   

@@ -4,10 +4,10 @@ main#playground {
   }
   
   div.cell {
-    width: 7vw;
-    height: 7vw;
-    min-height: 25px;
-    min-width: 25px;
+    width: 5vw;
+    height: 5vw;
+    min-height: 5px;
+    min-width: 5px;
     display: inline-block;
     margin: 3px;
     border: 0px solid white;
@@ -19,9 +19,9 @@ main#playground {
 
 
     display: block;
-    width: 7vw;
+    width: 5vw;
     font-size: 1em;
-    height: 5vh;
+    height: 3vh;
     background-color: #ccc;
     border: none;
     margin: 1.5vh auto;

@@ -2,15 +2,23 @@ import logo from '../../assets/logo.svg';
 import './App.scss';
 import Currencieslist from './currencieslist';
 import currencies from './currencies';
-import Header from './header';
 import Fullgame from './fullgame';
 import Fullgame2 from './fullgame2';
 import Fullgame3 from './fullgame3';
 import recipe from './recipe';
+import PendingOrder from './pendingorder';
+import { useState } from 'react';
+import Header from './header';
+
 
 
 
 function App() {
+
+  const [buy, setBuy] = useState([]);
+
+
+
 
   let game2 = false;
   let game3 = false;
@@ -30,7 +38,7 @@ function App() {
   
       <div className="app-header">
 
-      <Header recipes = {recipe}/>
+      <Header recipes = {recipe} buy={buy} setBuy={setBuy} />
 
 
       </div>
@@ -44,6 +52,11 @@ function App() {
 
 
         <div className="app3">  <Fullgame/>  </div>
+
+
+        <div className="app4">  <PendingOrder buy={buy} setBuy={setBuy} />  </div>
+ 
+
 
       </div>
 
